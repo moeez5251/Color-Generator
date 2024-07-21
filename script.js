@@ -30,3 +30,17 @@ const palltete_reset = () => {
     });
 }
 button.addEventListener('click', palltete_reset);
+
+pallete.forEach(e => {
+    e.addEventListener('click', () => {
+
+        let span = e.querySelector('.name');
+        let temp = span.innerHTML;
+        navigator.clipboard.writeText(temp);
+        span.innerHTML = 'Copied !'
+        setTimeout(() => {
+            span.innerHTML = temp;
+        }, 2000);
+
+    })
+})

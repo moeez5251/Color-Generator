@@ -43,6 +43,7 @@ body {
     height: 200px;
     outline: 11px solid white;
     outline-offset: -5px;
+    cursor: pointer;
 }
 
 .color {
@@ -60,7 +61,8 @@ body {
     height: 38px;
     font-family: "Ubuntu", sans-serif;
     font-size: 23px;
-    padding: 10px 0px;
+    padding: 7px 0px;
+    padding-bottom: 0px;
 
 }
 
