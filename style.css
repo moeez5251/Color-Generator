@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(223 223 223);
+}
+
+.head {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    transition: all 2s;
+    top: 0;
+}
+
+.heading {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+    top: 50%;
+}
+
+.container {
+    margin-top: 45px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 46px 29px;
+
+}
+
+.pallete {
+    width: 150px;
+    height: 200px;
+    outline: 11px solid white;
+    outline-offset: -5px;
+}
+
+.color {
+    width: 138px;
+    height: 160px;
+    margin: auto;
+}
+
+.name {
+    background-color: white;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 3px;
+    height: 38px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 23px;
+    padding: 10px 0px;
+
+}
+
+.button {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 87%;
+
+}
+
+.btn {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
